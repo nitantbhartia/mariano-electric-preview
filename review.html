@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review card — Mariano Electric</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .printc { max-width: 480px; margin: 1.2rem auto; background: #f3e7b2; border: 4px solid #2a241c; padding: 1.2rem; font-family: "Special Elite", ui-monospace, monospace; }
+    .printc img { width: 220px; height: 220px; display: block; margin: 0.7rem auto; background: #fff; }
+    .actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .actions button, .actions a { background: #4a5340; color: #f3e7b2; border: 0; padding: 0.5rem 0.7rem; text-decoration: none; cursor: pointer; font-family: "Special Elite", ui-monospace, monospace; }
+    .fine { font-size: 0.85rem; }
+    @media print { .disp-bar, .actions, .lang { display: none !important; } body { background: #fff; } }
+  </style>
+</head>
+<body>
+  <header class="disp-bar">
+    <span>Mariano Electric</span>
+    <nav class="lang" aria-label="Language">
+      <button type="button" data-set="en" aria-pressed="true">EN</button>
+      <button type="button" data-set="es" aria-pressed="false">ES</button>
+    </nav>
+  </header>
+  <article class="printc">
+    <h1 style="font-size:1.6rem;">Mariano Electric</h1>
+    <p>(858) 876-8131 · San Diego, CA</p>
+    <img src="review-qr.svg" width="220" height="220" alt="QR code: Google search for Mariano Electric San Diego using the published phone">
+    <p data-en="jmarianoelectric.com does not publish a Google or Yelp listing URL. This QR opens a Google search for Mariano Electric San Diego with the published phone (858) 876-8131. No street was printed because none is on the original site." data-es="jmarianoelectric.com no publica URL de Google o Yelp. Este QR abre una búsqueda de Google de Mariano Electric San Diego con el teléfono publicado (858) 876-8131. No se imprime calle porque el sitio original no la tiene.">jmarianoelectric.com does not publish a Google or Yelp listing URL. This QR opens a Google search for Mariano Electric San Diego with the published phone (858) 876-8131. No street was printed because none is on the original site.</p>
+    <p class="fine" data-en="Their published social is Instagram @jmelectric760. No testimonials were invented." data-es="Su red publicada es Instagram @jmelectric760. No se inventaron testimonios.">Their published social is Instagram @jmelectric760. No testimonials were invented.</p>
+    <div class="actions">
+      <button type="button" id="print-card" data-en="Print this card" data-es="Imprimir esta tarjeta">Print this card</button>
+      <a href="index.html" data-en="Back to dispatch" data-es="Volver al despacho">Back to dispatch</a>
+    </div>
+  </article>
+  <script src="script.js"></script>
+</body>
+</html>
