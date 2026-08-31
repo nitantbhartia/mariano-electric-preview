@@ -6,29 +6,47 @@
   <title>Review card — Mariano Electric</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    .printc { max-width: 480px; margin: 1.2rem auto; background: #f3e7b2; border: 4px solid #2a241c; padding: 1.2rem; font-family: "Special Elite", ui-monospace, monospace; }
-    .printc img { width: 220px; height: 220px; display: block; margin: 0.7rem auto; background: #fff; }
-    .actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-    .actions button, .actions a { background: #4a5340; color: #f3e7b2; border: 0; padding: 0.5rem 0.7rem; text-decoration: none; cursor: pointer; font-family: "Special Elite", ui-monospace, monospace; }
-    @media print { .disp-bar, .actions, .lang { display: none !important; } body { background: #fff; } }
+    .printc {
+      max-width: 5in;
+      margin: 1.1rem auto 2rem;
+      background: #efe3c0;
+      border: 10px solid #3a3428;
+      padding: 1.05rem 1.1rem 1.2rem;
+      box-shadow: inset 0 0 0 2px #c4bea2;
+    }
+    .printc .co { color: #241c14; font-size: 1.7rem; margin: 0 0 0.25rem; }
+    .printc img { width: 200px; height: 200px; display: block; margin: 0.55rem auto; background: #fff; }
+    .actions { display: flex; gap: 0.45rem; flex-wrap: wrap; margin-top: 0.7rem; }
+    .actions button, .actions a {
+      background: #3a3428; color: #f4ead0; border: 0; padding: 0.45rem 0.65rem;
+      text-decoration: none; cursor: pointer; font-family: Cousine, ui-monospace, monospace;
+    }
+    @media print {
+      .lip, .actions, .lang { display: none !important; }
+      body { background: #fff; }
+      .printc { box-shadow: none; margin: 0; }
+    }
   </style>
 </head>
 <body>
-  <header class="disp-bar">
-    <span>Mariano Electric</span>
+  <header class="lip" style="max-width:5in;margin:0.7rem auto 0;color:#3a3428">
+    <div>
+      <p class="co" style="color:#3a3428;text-shadow:none">Mariano Electric</p>
+    </div>
     <nav class="lang" aria-label="Language">
       <button type="button" data-set="en" aria-pressed="true">EN</button>
       <button type="button" data-set="es" aria-pressed="false">ES</button>
     </nav>
   </header>
   <article class="printc">
-    <h1 style="font-size:1.6rem;">Mariano Electric</h1>
-    <p><a class="plain" href="tel:+18588768131">(858) 876-8131</a> · San Diego, CA</p>
-    <img src="review-qr.svg" width="220" height="220" alt="QR code to find Mariano Electric on Google">
+    <p class="co">Mariano Electric</p>
+    <p data-en="San Diego, CA · family-owned" data-es="San Diego, CA · familiar">San Diego, CA · family-owned</p>
+    <p><a class="plain" href="tel:+18588768131">(858) 876-8131</a></p>
+    <img src="review-qr.svg" width="200" height="200" alt="QR code to find Mariano Electric on Google">
     <p data-en="Scan to find us on Google and leave a review." data-es="Escanee para encontrarnos en Google y dejar una reseña.">Scan to find us on Google and leave a review.</p>
     <div class="actions">
       <button type="button" id="print-card" data-en="Print this card" data-es="Imprimir esta tarjeta">Print this card</button>
-      <a href="index.html" data-en="Back to dispatch" data-es="Volver al despacho">Back to dispatch</a>
+      <a href="index.html" data-en="Back to the fuse box" data-es="Volver a la caja de fusibles">Back to the fuse box</a>
     </div>
   </article>
   <script src="script.js"></script>
