@@ -4,32 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mariano Electric — San Diego, CA</title>
-  <meta name="description" content="Family-owned Mariano Electric. Experienced, reliable, quality electrical services to San Diego, CA. Residential and commercial. One-year warranty. Old home experts. (858) 876-8131.">
+  <meta name="description" content="Family-owned Mariano Electric. Experienced, reliable, quality electrical services to San Diego, CA. One-year warranty. Old home experts. (858) 876-8131.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <article class="sleeve" aria-label="Mariano Electric Edison fuse sleeve">
-    <span class="eye" aria-hidden="true"></span>
-    <span class="twine" aria-hidden="true"></span>
-
-    <header class="print">
+  <article class="pad" aria-label="Mariano Electric while-you-were-out card">
+    <header class="bar">
+      <p class="who" data-en="WHILE YOU WERE OUT" data-es="MIENTRAS NO ESTABA">WHILE YOU WERE OUT</p>
       <nav class="lang" aria-label="Language">
         <button type="button" data-set="en" aria-pressed="true">EN</button>
         <button type="button" data-set="es" aria-pressed="false">ES</button>
       </nav>
-      <p class="co">Mariano Electric</p>
-      <h1 data-en="Providing experienced, reliable, &amp; quality electrical services to San Diego, CA" data-es="Servicios eléctricos con experiencia, confiables y de calidad en San Diego, CA">Providing experienced, reliable, &amp; quality electrical services to San Diego, CA</h1>
-      <a class="phone" href="tel:+18588768131">(858) 876-8131</a>
     </header>
 
-    <div class="window">
-      <div class="fuse" aria-hidden="true">
-        <span class="cap"></span>
-        <span class="glass"><i></i><i></i></span>
-        <span class="base"></span>
-      </div>
-      <p class="win-note" data-en="Old-home Edison — mailed sleeve" data-es="Edison de casa antigua — sobre enviado">Old-home Edison — mailed sleeve</p>
-    </div>
+    <p class="co">Mariano Electric</p>
+    <p class="tag" data-en="Providing experienced, reliable, &amp; quality electrical services to San Diego, CA" data-es="Servicios eléctricos con experiencia, confiables y de calidad en San Diego, CA">Providing experienced, reliable, &amp; quality electrical services to San Diego, CA</p>
+    <a class="phone" href="tel:+18588768131">(858) 876-8131</a>
 
     <ul class="chips">
       <li data-en="Family-owned" data-es="Familiar">Family-owned</li>
@@ -38,29 +28,23 @@
       <li data-en="The old home experts" data-es="Expertos en casas antiguas">The old home experts</li>
     </ul>
 
-    <p class="lede" data-en="Office staff returns the call and sets a time. If it can be fixed on the spot, it is. Rewiring or panel upgrades get an estimate, parts, and a time to return. Residential and commercial. Greater San Diego Area." data-es="El personal de oficina devuelve la llamada y agenda. Si se puede arreglar en el momento, se hace. Recableado o mejora de panel: estimado, partes y fecha de regreso. Residencial y comercial. Gran San Diego.">Office staff returns the call and sets a time. If it can be fixed on the spot, it is. Rewiring or panel upgrades get an estimate, parts, and a time to return. Residential and commercial. Greater San Diego Area.</p>
+    <p class="note" data-en="Office staff returns the call and sets a time. If it can be fixed on the spot, it is. Rewiring or panel upgrades get an estimate, parts, and a time to return. Greater San Diego Area. Residential and commercial." data-es="El personal de oficina devuelve la llamada y agenda. Si se puede arreglar en el momento, se hace. Recableado o mejora de panel: estimado, partes y fecha de regreso. Gran San Diego. Residencial y comercial.">Office staff returns the call and sets a time. If it can be fixed on the spot, it is. Rewiring or panel upgrades get an estimate, parts, and a time to return. Greater San Diego Area. Residential and commercial.</p>
 
-    <ul class="amps">
-      <li data-en="Electrical repairs" data-es="Reparaciones eléctricas">Electrical repairs</li>
-      <li data-en="Inspections" data-es="Inspecciones">Inspections</li>
-      <li data-en="Rewiring" data-es="Recableado">Rewiring</li>
-      <li data-en="New construction" data-es="Obra nueva">New construction</li>
-      <li data-en="Electrical panel upgrade" data-es="Mejora de panel eléctrico">Electrical panel upgrade</li>
-    </ul>
+    <p class="jobs" data-en="Repairs · outlets &amp; switches · panels · wiring · lighting, fans &amp; chandeliers · LED &amp; outdoor retrofit · whole-house fans · smoke detectors · surge · hot tub wiring · safety inspection · EV charging · solar · new construction · remodels" data-es="Reparaciones · contactos y apagadores · paneles · cableado · iluminación, ventiladores y candelabros · LED y exterior · ventiladores de casa · detectores de humo · sobretensión · jacuzzi · inspección · carga EV · solar · obra nueva · remodelación">Repairs · outlets &amp; switches · panels · wiring · lighting, fans &amp; chandeliers · LED &amp; outdoor retrofit · whole-house fans · smoke detectors · surge · hot tub wiring · safety inspection · EV charging · solar · new construction · remodels</p>
 
     <form id="job-form" action="sms:+18588768131" method="get">
-      <p class="fill" data-en="Sleeve flap — text a house call" data-es="Solapa — mensaje para visita">Sleeve flap — text a house call</p>
-      <label for="name" data-en="Name" data-es="Nombre">Name</label>
+      <p class="fill" data-en="From the office — text a house call" data-es="De la oficina — mensaje para visita">From the office — text a house call</p>
+      <label for="name" data-en="From" data-es="De">From</label>
       <input id="name" name="name" required autocomplete="name" data-en-placeholder="Caller name" data-es-placeholder="Nombre de quien llama">
-      <label for="address" data-en="Address (street, city, ZIP)" data-es="Dirección (calle, ciudad, ZIP)">Address (street, city, ZIP)</label>
+      <label for="address" data-en="At (street, city, ZIP)" data-es="En (calle, ciudad, ZIP)">At (street, city, ZIP)</label>
       <input id="address" name="address" required autocomplete="street-address" data-en-placeholder="Street, city, ZIP" data-es-placeholder="Calle, ciudad, ZIP">
-      <label for="need" data-en="Need" data-es="Necesidad">Need</label>
-      <textarea id="need" name="need" required rows="2" data-en-placeholder="Old-home electricity, panel, repair…" data-es-placeholder="Electricidad de casa antigua, panel, reparación…"></textarea>
+      <label for="need" data-en="Message" data-es="Mensaje">Message</label>
+      <textarea id="need" name="need" required data-en-placeholder="Old-home electricity, panel, repair…" data-es-placeholder="Electricidad de casa antigua, panel, reparación…"></textarea>
       <p id="job-err" hidden class="hint" data-en="Name, address, and need are required for a house call." data-es="Nombre, dirección y necesidad son obligatorios para una visita a domicilio.">Name, address, and need are required for a house call.</p>
       <button type="submit" data-en="Open a text to (858) 876-8131" data-es="Abrir mensaje a (858) 876-8131">Open a text to (858) 876-8131</button>
     </form>
 
-    <footer class="sill">
+    <footer class="foot">
       <span data-en="Copyright © 2022 Mariano Electric — All Rights Reserved." data-es="Copyright © 2022 Mariano Electric — Todos los derechos reservados.">Copyright © 2022 Mariano Electric — All Rights Reserved.</span>
       <span>
         <a class="plain" href="https://www.instagram.com/jmelectric760">Instagram @jmelectric760</a>
