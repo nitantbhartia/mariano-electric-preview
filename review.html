@@ -6,24 +6,12 @@
   <title>Review card — Mariano Electric</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    .printc {
-      width: min(calc(100% - 1.2rem), 5.05in);
-      margin: 0.85rem auto 1.6rem;
-      background: #f3d24a;
-      border: 1px solid #1c1710;
-      padding: 0.9rem 0.85rem 1rem;
-    }
-    .printc .co { font-family: Ultra, "Times New Roman", serif; font-size: 1.45rem; margin: 0 0 0.25rem; }
-    .printc img { width: 200px; height: 200px; display: block; margin: 0.5rem auto; background: #fff; }
-    .actions { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.6rem; }
-    .actions button, .actions a {
-      background: #1c1710; color: #f3d24a; border: 0; padding: 0.4rem 0.6rem;
-      text-decoration: none; cursor: pointer; font-family: "Overpass Mono", ui-monospace, monospace;
-    }
-    @media print {
-      .lang, .actions { display: none !important; }
-      body { background: #fff; }
-    }
+    .printc { max-width: 5.05in; margin: 1.1rem auto; background: #c9a36a; border: 8px solid #a9844e; padding: 1rem; }
+    .printc h1 { font-family: "Bowlby One SC", Impact, sans-serif; font-size: 1.5rem; margin: 0 0 0.3rem; }
+    .printc img { width: 200px; height: 200px; display: block; margin: 0.6rem auto; background: #fff; }
+    .actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .actions button, .actions a { background: #8a1f18; color: #f3e2c0; border: 0; padding: 0.45rem 0.65rem; text-decoration: none; cursor: pointer; font-family: Inconsolata, ui-monospace, monospace; }
+    @media print { .lang, .actions { display: none !important; } body { background: #fff; } }
   </style>
 </head>
 <body>
@@ -32,14 +20,13 @@
       <button type="button" data-set="en" aria-pressed="true">EN</button>
       <button type="button" data-set="es" aria-pressed="false">ES</button>
     </nav>
-    <p class="co">Mariano Electric</p>
-    <p data-en="San Diego, CA · family-owned" data-es="San Diego, CA · familiar">San Diego, CA · family-owned</p>
-    <p><a class="plain" href="tel:+18588768131">(858) 876-8131</a></p>
+    <h1>Mariano Electric</h1>
+    <p><a class="plain" href="tel:+18588768131">(858) 876-8131</a> · San Diego, CA</p>
     <img src="review-qr.svg" width="200" height="200" alt="QR code to find Mariano Electric on Google">
     <p data-en="Scan to find us on Google and leave a review." data-es="Escanee para encontrarnos en Google y dejar una reseña.">Scan to find us on Google and leave a review.</p>
     <div class="actions">
       <button type="button" id="print-card" data-en="Print this card" data-es="Imprimir esta tarjeta">Print this card</button>
-      <a href="index.html" data-en="Back to the card" data-es="Volver a la tarjeta">Back to the card</a>
+      <a href="index.html" data-en="Back to the sleeve" data-es="Volver al sobre">Back to the sleeve</a>
     </div>
   </article>
   <script src="script.js"></script>
